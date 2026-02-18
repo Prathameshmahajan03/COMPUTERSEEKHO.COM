@@ -1,0 +1,78 @@
+package com.example.controllers;
+
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
+import com.example.DTO.ApiResponse;
+
+import java.io.File;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.time.LocalDateTime;
+import java.util.UUID;
+
+@RestController
+@RequestMapping("/image")
+@CrossOrigin("*")
+public class ImageUploadController {
+
+    // Absolute path to the frontend public images folder
+    // Note: In a real production env, this would be an S3 bucket or a configured
+    // file server path.
+    // For this local setup, we write directly to the frontend's public/images
+    // folder.
+    private static final String UPLOAD_DIR = "D:\\Cdac VITA\\Computer sikho Project by VITA\\java project vita 06\\computer-seekho-frontend\\public\\images\\";
+
+    @PostMapping("/upload")
+    public ResponseEntity<?> uploadImage(@RequestParam("file") MultipartFile file) {
+        if (file.isEmpty()) {
+            return ResponseEntity.status(HttpStatus.BAD_REQUEST)
+                    .body(new ApiResponse("File is empty", LocalDateTime.now()));
+        }
+
+        try {
+            // Create directory if it doesn't exist
+            File directory = new File(UPLOAD_DIR);
+            if (!directory.exists()) {
+                directory.mkdirs();
+            }
+
+            // Generate a unique filename to prevent collisions
+            String originalFilename = file.getOriginalFilename();
+            String extension = "";
+            if (originalFilename != null && originalFilename.contains(".")) {
+                extension = originalFilename.substring(originalFilename.lastIndexOf("."));
+            }
+            String uniqueFilename = UUID.randomUUID().toString() + extension;
+
+            // Save the file
+            Path filePath = Paths.get(UPLOAD_DIR + uniqueFilename);
+            Files.write(filePath, file.getBytes());
+
+            // Return the relative path for the frontend (images/filename.ext)
+            // The frontend running on / starts looking in public, so /images/... is
+            // correct.
+            String relativePath = "/images/" + uniqueFilename;
+
+            // We return a simple map or DTO containing the url
+            return ResponseEntity.ok(new ImageResponse(relativePath));
+
+        } catch (IOException e) {
+            e.printStackTrace();
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
+                    .body(new ApiResponse("Image upload failed: " + e.getMessage(), LocalDateTime.now()));
+        }
+    }
+
+    // Simple DTO for response
+    static class ImageResponse {
+        public String url;
+
+        public ImageResponse(String url) {
+            this.url = url;
+        }
+    }
+}

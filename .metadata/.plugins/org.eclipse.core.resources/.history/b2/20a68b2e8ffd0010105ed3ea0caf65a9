@@ -1,0 +1,26 @@
+spring.application.name=ComputerSeekho
+spring.messages.encoding=UTF-8
+spring.messages.fallback-to-system-locale=false
+spring.datasource.url=jdbc:mysql://localhost:3306/computerseekhoapp
+spring.datasource.username=root
+spring.datasource.password=Rohit@1212
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+spring.jpa.database-platform=org.hibernate.dialect.MySQLDialect
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+logging.file.name=D:/Gravity/ComputerSeekho/ComputerSeekho/application.log
+logging.pattern.file=%d{yyyy-MM-dd HH:mm:ss} - %msg%n
+
+# Email Configuration - UPDATE THESE VALUES
+spring.mail.host=smtp.gmail.com
+spring.mail.port=587
+spring.mail.username=shreyashdhargave626@gmail.com
+spring.mail.password=mmsl yxmq jgtx yycd
+spring.mail.properties.mail.smtp.auth=true
+spring.mail.properties.mail.smtp.starttls.enable=true
+
+# Jackson Configuration
+spring.jackson.deserialization.fail-on-null-for-primitives=false
+spring.jackson.deserialization.fail-on-unknown-properties=false
+spring.servlet.multipart.max-file-size=10MB
+spring.servlet.multipart.max-request-size=10MB
