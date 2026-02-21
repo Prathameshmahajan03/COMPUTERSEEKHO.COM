@@ -1,0 +1,805 @@
+[
+  {
+    "ContainingType": "ComputerSeekho.Net.Controllers.AlbumController",
+    "Method": "Add",
+    "RelativePath": "Album/add",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "item",
+        "Type": "ComputerSeekho.Net.Models.Album",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ComputerSeekho.Net.Controllers.AlbumController",
+    "Method": "Delete",
+    "RelativePath": "Album/delete/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ComputerSeekho.Net.Controllers.AlbumController",
+    "Method": "GetAll",
+    "RelativePath": "Album/getAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ComputerSeekho.Net.Controllers.NewsController",
+    "Method": "Add",
+    "RelativePath": "News/add",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "item",
+        "Type": "ComputerSeekho.Net.Models.News",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ComputerSeekho.Net.Controllers.NewsController",
+    "Method": "GetAll",
+    "RelativePath": "News/all",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ComputerSeekho.Net.Controllers.NewsController",
+    "Method": "GetLatest",
+    "RelativePath": "News/latest",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ComputerSeekho.Net.Controllers.VideoController",
+    "Method": "Add",
+    "RelativePath": "Video/add",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "item",
+        "Type": "ComputerSeekho.Net.Models.Video",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ComputerSeekho.Net.Controllers.VideoController",
+    "Method": "Delete",
+    "RelativePath": "Video/delete/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ComputerSeekho.Net.Controllers.VideoController",
+    "Method": "GetAll",
+    "RelativePath": "Video/getAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ComputerSeekho.Net.Controllers.WeatherForecastController",
+    "Method": "Get",
+    "RelativePath": "WeatherForecast",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[ComputerSeekho.Net.WeatherForecast, ComputerSeekho.Net, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "GetWeatherForecast"
+  },
+  {
+    "ContainingType": "ComputerSeekho.Net.Controllers.ExcelController",
+    "Method": "DownloadSample",
+    "RelativePath": "api/excel/download",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ComputerSeekho.Net.Controllers.ExcelController",
+    "Method": "UploadFile",
+    "RelativePath": "api/excel/upload",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "file",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "type",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ComputerSeekho.Net.Controllers.AuthController",
+    "Method": "GoogleLogin",
+    "RelativePath": "auth/google-login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "googleDto",
+        "Type": "ComputerSeekho.Net.DTOs.GoogleLoginDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ComputerSeekho.Net.Controllers.AuthController",
+    "Method": "SignIn",
+    "RelativePath": "auth/signIn",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "loginRequest",
+        "Type": "ComputerSeekho.Net.DTOs.LoginRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ComputerSeekho.Net.Controllers.BatchController",
+    "Method": "ToggleStatus",
+    "RelativePath": "batch/activate/{id}/{status}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "status",
+        "Type": "System.Boolean",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ComputerSeekho.Net.Controllers.BatchController",
+    "Method": "AddBatch",
+    "RelativePath": "batch/add",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "batch",
+        "Type": "ComputerSeekho.Net.Models.Batch",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ComputerSeekho.Net.Controllers.BatchController",
+    "Method": "GetAllBatches",
+    "RelativePath": "batch/all",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ComputerSeekho.Net.Controllers.BatchController",
+    "Method": "DeleteBatch",
+    "RelativePath": "batch/delete/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ComputerSeekho.Net.Controllers.BatchController",
+    "Method": "GetActiveBatches",
+    "RelativePath": "batch/get/all/activebatch",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ComputerSeekho.Net.Controllers.ClosureReasonController",
+    "Method": "Add",
+    "RelativePath": "closure-reason/add",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "item",
+        "Type": "ComputerSeekho.Net.Models.ClosureReason",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ComputerSeekho.Net.Controllers.ClosureReasonController",
+    "Method": "GetAll",
+    "RelativePath": "closure-reason/getAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ComputerSeekho.Net.Controllers.CourseController",
+    "Method": "AddCourse",
+    "RelativePath": "course/add",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "course",
+        "Type": "ComputerSeekho.Net.Models.Course",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ComputerSeekho.Net.Controllers.CourseController",
+    "Method": "DeleteCourse",
+    "RelativePath": "course/delete/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ComputerSeekho.Net.Controllers.CourseController",
+    "Method": "GetAllCourses",
+    "RelativePath": "course/getAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ComputerSeekho.Net.Controllers.EnquiryController",
+    "Method": "CreateEnquiry",
+    "RelativePath": "enquiries/create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "enquiry",
+        "Type": "ComputerSeekho.Net.Models.Enquiry",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ComputerSeekho.Net.Controllers.EnquiryController",
+    "Method": "Deactivate",
+    "RelativePath": "enquiries/deactivate/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ComputerSeekho.Net.Controllers.EnquiryController",
+    "Method": "GetAllEnquiries",
+    "RelativePath": "enquiries/getAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ComputerSeekho.Net.Controllers.EnquiryController",
+    "Method": "GetByStaff",
+    "RelativePath": "enquiries/getbystaff/{username}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "username",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ComputerSeekho.Net.Controllers.EnquiryController",
+    "Method": "SearchEnquiry",
+    "RelativePath": "enquiries/search",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "mobile",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ComputerSeekho.Net.Controllers.EnquiryController",
+    "Method": "UpdateEnquiry",
+    "RelativePath": "enquiries/update/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "enquiry",
+        "Type": "ComputerSeekho.Net.Models.Enquiry",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ComputerSeekho.Net.Controllers.EnquiryController",
+    "Method": "UpdateMessage",
+    "RelativePath": "enquiries/updateMessage/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ComputerSeekho.Net.Controllers.GetInTouchController",
+    "Method": "Add",
+    "RelativePath": "getintouch/add",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "item",
+        "Type": "ComputerSeekho.Net.Models.GetInTouch",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ComputerSeekho.Net.Controllers.GetInTouchController",
+    "Method": "Delete",
+    "RelativePath": "getintouch/delete/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ComputerSeekho.Net.Controllers.GetInTouchController",
+    "Method": "GetAll",
+    "RelativePath": "getintouch/getAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ComputerSeekho.Net.Controllers.I18nController",
+    "Method": "Greet",
+    "RelativePath": "i18n/greet",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "lang",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ComputerSeekho.Net.Controllers.I18nController",
+    "Method": "GetMessages",
+    "RelativePath": "i18n/messages",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "lang",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ComputerSeekho.Net.Controllers.ImageController",
+    "Method": "UploadImage",
+    "RelativePath": "image/upload",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "file",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ComputerSeekho.Net.Controllers.PaymentController",
+    "Method": "AddPayment",
+    "RelativePath": "payment/add",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "payment",
+        "Type": "ComputerSeekho.Net.Models.Payment",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ComputerSeekho.Net.Controllers.PaymentController",
+    "Method": "GetAllPayments",
+    "RelativePath": "payment/getAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ComputerSeekho.Net.Controllers.PaymentTypeController",
+    "Method": "Add",
+    "RelativePath": "paymentTypes/add",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "item",
+        "Type": "ComputerSeekho.Net.Models.PaymentType",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ComputerSeekho.Net.Controllers.PaymentTypeController",
+    "Method": "GetAll",
+    "RelativePath": "paymentTypes/getAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ComputerSeekho.Net.Controllers.PlacementController",
+    "Method": "Add",
+    "RelativePath": "placement/add",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "placement",
+        "Type": "ComputerSeekho.Net.Models.Placement",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ComputerSeekho.Net.Controllers.PlacementController",
+    "Method": "GetAll",
+    "RelativePath": "placement/all",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ComputerSeekho.Net.Controllers.PlacementController",
+    "Method": "GetByBatch",
+    "RelativePath": "placement/getByBatch/{batchId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "batchId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ComputerSeekho.Net.Controllers.PlacementController",
+    "Method": "GetByRecruiter",
+    "RelativePath": "placement/getByRecruiter/{recruiterId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "recruiterId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ComputerSeekho.Net.Controllers.RecruiterController",
+    "Method": "Add",
+    "RelativePath": "recruiter/add",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "item",
+        "Type": "ComputerSeekho.Net.Models.Recruiter",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ComputerSeekho.Net.Controllers.RecruiterController",
+    "Method": "Delete",
+    "RelativePath": "recruiter/delete/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ComputerSeekho.Net.Controllers.RecruiterController",
+    "Method": "GetAll",
+    "RelativePath": "recruiter/getAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ComputerSeekho.Net.Controllers.StaffController",
+    "Method": "AddStaff",
+    "RelativePath": "staff/add",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "staff",
+        "Type": "ComputerSeekho.Net.Models.Staff",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ComputerSeekho.Net.Controllers.StaffController",
+    "Method": "DeleteStaff",
+    "RelativePath": "staff/delete/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ComputerSeekho.Net.Controllers.StaffController",
+    "Method": "GetAllStaff",
+    "RelativePath": "staff/getAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ComputerSeekho.Net.Controllers.StudentController",
+    "Method": "RegisterStudent",
+    "RelativePath": "student/add/{enquiryId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "student",
+        "Type": "ComputerSeekho.Net.Models.Student",
+        "IsRequired": true
+      },
+      {
+        "Name": "enquiryId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ComputerSeekho.Net.Controllers.StudentController",
+    "Method": "GetStudentById",
+    "RelativePath": "student/get/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ComputerSeekho.Net.Controllers.StudentController",
+    "Method": "GetAllStudents",
+    "RelativePath": "student/getAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ComputerSeekho.Net.Controllers.StudentController",
+    "Method": "DownloadProfile",
+    "RelativePath": "student/pdf/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

@@ -1,0 +1,14 @@
+wwwroot\images\28f95955-5ebb-4b29-877c-9be3b440d1d4_morning.png
+wwwroot\images\2cc7d768-e33a-4f5a-8090-2fe79313f628_shreyash.png.jpeg
+wwwroot\images\2d0628af-0055-4d88-b65c-9326c995743c_Python Full-Stack.png
+wwwroot\images\2f555ee0-0fa8-4148-a146-3411bf5b8722_download.jpeg
+wwwroot\images\505bf685-e479-46a5-a717-715a00b2c7fa_Software Testing.png
+wwwroot\images\75d14099-2ced-4a88-bddd-92c089a386c8_WhatsApp Image 2025-06-22 at 8.11.09 AM.jpeg
+wwwroot\images\7ba88a20-1d6e-40f5-b48b-5280910b2c86_Python Full-Stack.png
+wwwroot\images\84f1961a-e3e0-4e5b-9791-a6ade8803c0c_download.jpeg
+wwwroot\images\87b3bae0-aa0d-4e69-8810-a00bc9135f11_r.jpg.jpeg
+wwwroot\images\98f19208-038b-4945-ab7e-3524b5a572b0_WhatsApp Image 2025-06-09 at 2.31.54 PM.jpeg
+wwwroot\images\9a13fba3-d10b-4050-bc5c-e7d3619ac365_campus-1.jpeg
+wwwroot\images\cf3cdd30-fea2-482f-a129-3284e9711dc6_unnamed.jpg
+wwwroot\images\f9590116-2c77-495a-a4bf-92d5d1b26c6d_Software Testing.png
+wwwroot\images\fc965d47-46e4-4bbc-a588-d961b6f34045_download.jpeg

@@ -1,0 +1,10 @@
+iText.Kernel.Exceptions.PdfException: Unknown PdfException.
+ ---> System.NotSupportedException: Either com.itextpdf:bouncy-castle-adapter or com.itextpdf:bouncy-castle-fips-adapter dependency must be added in order to use BouncyCastleFactoryCreator
+   at iText.Bouncycastleconnector.BouncyCastleDefaultFactory.CreateIDigest(String hashAlgorithm)
+   at iText.Kernel.Pdf.SmartModePdfObjectsSerializer..ctor()
+   --- End of inner exception stack trace ---
+   at iText.Kernel.Pdf.SmartModePdfObjectsSerializer..ctor()
+   at iText.Kernel.Pdf.PdfWriter..ctor(Stream os, WriterProperties properties)
+   at iText.Kernel.Pdf.PdfWriter..ctor(Stream os)
+   at ComputerSeekho.Net.Services.PdfService.GenerateStudentPdf(Student student) in D:\Gravity\ComputerSeekho\ComputerSeekho.Net\ComputerSeekho.Net\Services\PdfService.cs:line 16
+   at ComputerSeekho.Net.Controllers.StudentController.DownloadProfile(Int32 id) in D:\Gravity\ComputerSeekho\ComputerSeekho.Net\ComputerSeekho.Net\Controllers\StudentController.cs:line 49
